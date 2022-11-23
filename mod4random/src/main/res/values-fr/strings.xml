@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Module 4 Aléatoire</string>
+    <string name="label_title">Générateur de nombre aléatoire</string>
+    <string name="label_button_generate">Générer</string>
+    <string name="hint_min">Minimum</string>
+    <string name="hint_max">Maximum</string>
+</resources>
