@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="1.7" />
+    <bytecodeTargetLevel target="1.7">
+      <module name="mod2ihmsimple.mod2ihm1" target="11" />
+      <module name="mod2ihmsimple.mod2ihm2" target="11" />
+      <module name="mod2ihmsimple.mod2tp1" target="11" />
+      <module name="mod2ihmsimple.mod4databinding" target="11" />
+      <module name="mod2ihmsimple.mod4demo1" target="11" />
+      <module name="mod2ihmsimple.mod4random" target="11" />
+      <module name="mod2ihmsimple.mod4tpvraifaux" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

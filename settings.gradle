@@ -12,7 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "mod2ihmsimple"
+rootProject.name = "coursandroid"
 include ':mod2ihm1'
 include ':mod2ihm2'
 include ':mod2tp1'
@@ -21,3 +21,5 @@ include ':mod3tp4notes'
 include ':mod4demo1'
 include ':mod4random'
 include ':mod4databinding'
+include ':mod4tpvraifaux'
+include ':mod5nav'
