@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/blankFragment">
+
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.mod5tpcolorme.BlankFragment"
+        android:label="BlankFragment" >
+        <action
+            android:id="@+id/actionBlankToPink"
+            app:destination="@id/pinkFragment" />
+        <action
+            android:id="@+id/actionBlankToRed"
+            app:destination="@id/redFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pinkFragment"
+        android:name="com.example.mod5tpcolorme.PinkFragment"
+        android:label="fragment_pink"
+        tools:layout="@layout/fragment_pink" />
+    <fragment
+        android:id="@+id/redFragment"
+        android:name="com.example.mod5tpcolorme.RedFragment"
+        android:label="fragment_red"
+        tools:layout="@layout/fragment_red" />
+</navigation>
