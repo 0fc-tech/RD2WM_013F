@@ -2,25 +2,27 @@ package com.example.mod7compteur
 
 
 import android.os.Bundle
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
-import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.example.mod7compteur.databinding.ActivityCompteurBinding
 
 class CompteurActivity : AppCompatActivity() {
-    val textView : TextView by lazy { findViewById(R.id.textView) }
-    val fabIncrement : FloatingActionButton by lazy { findViewById(R.id.fabIncrement) }
+    //val textView : TextView by lazy { findViewById(R.id.textView) }
+    //val fabIncrement : FloatingActionButton by lazy { findViewById(R.id.fabIncrement) }
     //var compteur = 0
     lateinit var viewModel : CompteurViewModel
+    lateinit var binding : ActivityCompteurBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_compteur)
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_compteur)
         viewModel = ViewModelProvider(this)[CompteurViewModel::class.java]
-        textView.text = viewModel.compteur.toString()
-        fabIncrement.setOnClickListener {
+        binding.viewModel = viewModel
+        //textView.text = viewModel.compteur.toString()
+        binding.fabIncrement.setOnClickListener {
             viewModel.increment()
-            textView.text = (viewModel.compteur).toString()
+            binding.textView.text = (viewModel.compteur).toString()
         }
     }
 
