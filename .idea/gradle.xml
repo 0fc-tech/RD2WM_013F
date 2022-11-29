@@ -26,6 +26,9 @@
             <option value="$PROJECT_DIR$/mod6intentexpl" />
             <option value="$PROJECT_DIR$/mod6intentimpl" />
             <option value="$PROJECT_DIR$/mod6permissions" />
+            <option value="$PROJECT_DIR$/mod6tppermission" />
+            <option value="$PROJECT_DIR$/mod7compteur" />
+            <option value="$PROJECT_DIR$/mod7lifecycle" />
           </set>
         </option>
       </GradleProjectSettings>
