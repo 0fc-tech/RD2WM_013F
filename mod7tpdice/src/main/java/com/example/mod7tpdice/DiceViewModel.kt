@@ -1,11 +1,14 @@
 package com.example.mod7tpdice
 
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class DiceViewModel : ViewModel() {
-    var valueDice = 0
+    val valueDice = MutableLiveData(0)
+    val nbSides = MutableLiveData(6)
 
     fun launch(nbSides: Int) {
-        valueDice = (1..nbSides).random()
+        this.nbSides.value = nbSides
+        valueDice.value = (1..nbSides).random()
     }
 }

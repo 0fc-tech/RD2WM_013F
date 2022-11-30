@@ -30,6 +30,7 @@
             <option value="$PROJECT_DIR$/mod7compteur" />
             <option value="$PROJECT_DIR$/mod7lifecycle" />
             <option value="$PROJECT_DIR$/mod7tpdice" />
+            <option value="$PROJECT_DIR$/mod9room" />
           </set>
         </option>
       </GradleProjectSettings>

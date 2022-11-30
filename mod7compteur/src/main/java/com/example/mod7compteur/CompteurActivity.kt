@@ -23,11 +23,18 @@ class CompteurActivity : AppCompatActivity() {
         //textView.text = viewModel.compteur.toString()
         binding.fabIncrement.setOnClickListener {
             viewModel.increment()
-            //binding.textView.text = (viewModel.compteur).toString()
+            //binding.viewModel = viewModel
+
         }
         binding.buttonDecrement.setOnClickListener {
             viewModel.decrement()
+            //binding.viewModel = viewModel
         }
+        viewModel.compteur.observe(this,{ compteur : Int ->
+            if(compteur>10) {
+                binding.textView.setTextColor(0xFF00FF)
+            }
+        })
     }
 
     //override fun onSaveInstanceState(outState: Bundle) {

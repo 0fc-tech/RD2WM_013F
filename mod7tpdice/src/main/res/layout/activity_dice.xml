@@ -18,7 +18,7 @@
             android:id="@+id/textViewValueDice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{String.valueOf(vm.valueDice)}"
+            android:text="@{String.valueOf(vm.valueDice) + `/` + String.valueOf(vm.nbSides)}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -30,6 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:text="Lancer 6"
+            android:onClick="onClick"
             app:layout_constraintBottom_toTopOf="@+id/button10"
             app:layout_constraintEnd_toStartOf="@+id/button8"
             app:layout_constraintHorizontal_bias="0.5"
@@ -45,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:text="Lancer 8"
-
+            android:onClick="onClick"
             app:layout_constraintBottom_toTopOf="@+id/button20"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -60,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:text="Lancer 10"
-
+            android:onClick="onClick"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button20"
             app:layout_constraintHorizontal_bias="0.5"
@@ -75,7 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:text="Lancer 20"
-
+            android:onClick="onClick"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
