@@ -17,12 +17,16 @@ class CompteurActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_compteur)
+        binding.lifecycleOwner = this
         viewModel = ViewModelProvider(this)[CompteurViewModel::class.java]
         binding.viewModel = viewModel
         //textView.text = viewModel.compteur.toString()
         binding.fabIncrement.setOnClickListener {
             viewModel.increment()
-            binding.textView.text = (viewModel.compteur).toString()
+            //binding.textView.text = (viewModel.compteur).toString()
+        }
+        binding.buttonDecrement.setOnClickListener {
+            viewModel.decrement()
         }
     }
 

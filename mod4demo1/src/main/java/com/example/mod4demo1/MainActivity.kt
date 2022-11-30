@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         ratingBar.setIsIndicator(true)
 
         //TODO Afficher une snackbar lors du clic sur le bouton
-        findViewById<Button>(R.id.button).also {
+        findViewById<Button>(R.id.buttonDecrement).also {
             it.setOnClickListener {
                 Snackbar.make(
                     it,
