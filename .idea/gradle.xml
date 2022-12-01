@@ -10,6 +10,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/mod10recyclerview" />
+            <option value="$PROJECT_DIR$/mod12punkapi" />
             <option value="$PROJECT_DIR$/mod2ihm1" />
             <option value="$PROJECT_DIR$/mod2ihm2" />
             <option value="$PROJECT_DIR$/mod2tp1" />
