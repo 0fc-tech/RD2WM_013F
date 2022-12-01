@@ -5,10 +5,10 @@ import androidx.room.*
 @Dao
 interface OiseauDao {
     @Insert
-    fun insert(oiseau: Oiseau)
+    suspend fun insert(oiseau: Oiseau) : Long
 
     @Query("SELECT * FROM Oiseau WHERE id = :id")
-    fun get(id : Long) : Oiseau
+    suspend fun get(id : Long) : Oiseau
 
     @Update
     fun update(oiseau : Oiseau)
